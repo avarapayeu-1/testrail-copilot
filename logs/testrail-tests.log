@@ -1,0 +1,1079 @@
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-05 17:27:28"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-05 17:27:28"}
+{"level":"info","message":"Creating project: Test Project 6466b0ae","timestamp":"2025-06-05 17:27:28"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-05 17:27:28"}
+{"level":"info","message":"Creating project: Test Project 6466b0ae","timestamp":"2025-06-05 17:27:28"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"Project created with ID: 34","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"====== Test Finished: Create a new project ======","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"====== Test Started: Get project details ======","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"Getting details for project ID: 34","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/34","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/34","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"====== Test Finished: Get project details ======","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"====== Test Started: Update an existing project ======","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"Updating project ID 34 with name: Updated Project dd15ba32","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/34","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"Updating project ID: 34 with data: {\"name\":\"Updated Project dd15ba32\",\"announcement\":\"Strenuus tempore confero cognomen acquiro inventore atavus tribuo numquam. Aqua adeptio supellex vesper terra recusandae uberrime benevolentia paens approbo. Administratio vilicus tonsor aperte velit quidem uredo urbanus.\",\"show_announcement\":true}","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/34","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"====== Test Finished: Update an existing project ======","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"====== Test Started: Delete a project ======","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"Deleting project ID: 34","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/34","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"Deleting project ID: 34","timestamp":"2025-06-05 17:27:29"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/34","timestamp":"2025-06-05 17:27:30"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/34","timestamp":"2025-06-05 17:27:30"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/34","timestamp":"2025-06-05 17:27:30"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-05 17:27:30"}
+{"level":"info","message":"====== Test Finished: Delete a project ======","timestamp":"2025-06-05 17:27:30"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-05 17:27:30"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-05 17:52:01"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-05 17:52:01"}
+{"level":"info","message":"Creating project: Test Project f8ba775f","timestamp":"2025-06-05 17:52:01"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-05 17:52:03"}
+{"level":"info","message":"Created project with ID: 35 for test case tests","timestamp":"2025-06-05 17:52:03"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_cases/35","timestamp":"2025-06-05 17:52:03"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_cases/35","timestamp":"2025-06-05 17:52:03"}
+{"level":"info","message":"Using section ID: 1 for test case tests","timestamp":"2025-06-05 17:52:03"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-05 17:52:03"}
+{"level":"info","message":"Creating test case: Test Case 2258dc57 in section 1","timestamp":"2025-06-05 17:52:03"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-05 17:52:03"}
+{"level":"info","message":"Creating test case: Test Case 2258dc57 in section 1","timestamp":"2025-06-05 17:52:03"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"Test case created with ID: 2","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"Getting details for test case ID: 2","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/2","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/2","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"Updating test case ID 2 with title: Updated Test Case 1a50b8f2","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/2","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"Updating test case ID: 2 with data: {\"title\":\"Updated Test Case 1a50b8f2\",\"priority_id\":1,\"estimate\":\"9m\",\"refs\":\"aeternus\",\"custom_preconds\":\"Vaco veritatis ut. Aiunt certus textor iste desidero umerus adstringo volubilis coerceo bos. Voluntarius pecco uterque animus aggredior.\",\"custom_expected\":\"Atrocitas strenuus defero defendo vehemens adsum soleo animi sollers. Demonstro cuppedia tripudio denique fuga peccatus illum coadunatio. Caelestis capitulus ut vomica odit cunae utroque causa.\"}","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/2","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/35","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"Deleting project ID: 35","timestamp":"2025-06-05 17:52:04"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/35","timestamp":"2025-06-05 17:52:05"}
+{"level":"info","message":"Cleaned up project with ID: 35","timestamp":"2025-06-05 17:52:05"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-05 17:52:05"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-05 17:56:14"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-05 17:56:14"}
+{"level":"info","message":"Creating project: Test Project 66c76a35","timestamp":"2025-06-05 17:56:14"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-05 17:56:15"}
+{"level":"info","message":"Created project with ID: 36 for test case tests","timestamp":"2025-06-05 17:56:15"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_cases/36","timestamp":"2025-06-05 17:56:15"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_cases/36","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"Using section ID: 1 for test case tests","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"Creating test case: Test Case 3a75575f in section 1","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"Creating test case: Test Case 3a75575f in section 1","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"Test case created with ID: 3","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"Getting details for test case ID: 3","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/3","timestamp":"2025-06-05 17:56:16"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/3","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"Updating test case ID 3 with title: Updated Test Case e5ecf6d6","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/3","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"Updating test case ID: 3 with data: {\"title\":\"Updated Test Case e5ecf6d6\",\"priority_id\":1,\"estimate\":\"4m\",\"refs\":\"depopulo\",\"custom_preconds\":\"Fugiat defetiscor vulnero. Vereor atrox demens cubo vespillo vaco paulatim cultellus. Minus cupressus audax crepusculum correptius dolores crustulum.\",\"custom_expected\":\"Confero ter cuppedia assentator volo desipio amita amplexus. Collum spoliatio thymum tantillus censura cattus blandior vetus conculco vaco. Sed verumtamen clarus vitae tantillus delinquo aer arca.\"}","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/3","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"Deleting test case ID: 3","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/3","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"Deleting test case ID: 3","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/3","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/3","timestamp":"2025-06-05 17:56:17"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/3","timestamp":"2025-06-05 17:56:18"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-05 17:56:18"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-05 17:56:18"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/36","timestamp":"2025-06-05 17:56:18"}
+{"level":"info","message":"Deleting project ID: 36","timestamp":"2025-06-05 17:56:18"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/36","timestamp":"2025-06-05 17:56:18"}
+{"level":"info","message":"Cleaned up project with ID: 36","timestamp":"2025-06-05 17:56:18"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-05 17:56:18"}
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-05 17:57:28"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-05 17:57:28"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-05 17:57:28"}
+{"level":"info","message":"Creating project: Test Project 10fa24b3","timestamp":"2025-06-05 17:57:28"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-05 17:57:28"}
+{"level":"info","message":"Creating project: Test Project 10fa24b3","timestamp":"2025-06-05 17:57:28"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-05 17:57:28"}
+{"level":"info","message":"Creating project: Test Project 6fefa1e7","timestamp":"2025-06-05 17:57:28"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"Project created with ID: 37","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"====== Test Finished: Create a new project ======","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"Created project with ID: 38 for test case tests","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_cases/38","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"====== Test Started: Get project details ======","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"Getting details for project ID: 37","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/37","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_cases/38","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"Using section ID: 1 for test case tests","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"Creating test case: Test Case 29bffcf3 in section 1","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"Creating test case: Test Case 29bffcf3 in section 1","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/37","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"====== Test Finished: Get project details ======","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"====== Test Started: Update an existing project ======","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"Updating project ID 37 with name: Updated Project eee6a4d6","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/37","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"Updating project ID: 37 with data: {\"name\":\"Updated Project eee6a4d6\",\"announcement\":\"Thalassinus acceptus ambulo cibus canto. Defungo aggredior ad. Ago turpis repellat sint adamo casso tantum.\",\"show_announcement\":false}","timestamp":"2025-06-05 17:57:29"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"Test case created with ID: 4","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"Getting details for test case ID: 4","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/4","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/37","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"====== Test Finished: Update an existing project ======","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"====== Test Started: Delete a project ======","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"Deleting project ID: 37","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/37","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"Deleting project ID: 37","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/4","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"Updating test case ID 4 with title: Updated Test Case 13696a52","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/4","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"Updating test case ID: 4 with data: {\"title\":\"Updated Test Case 13696a52\",\"priority_id\":1,\"estimate\":\"7m\",\"refs\":\"triduana\",\"custom_preconds\":\"Vitae ventus tersus volubilis tutamen aperiam casus abeo. Arcesso utor subnecto. Corrupti vae certe caveo blanditiis capio porro sustineo.\",\"custom_expected\":\"In textilis concedo tolero. Praesentium umbra repellendus capitulus trans convoco. Thymum ater quas quod stabilis.\"}","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/37","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/37","timestamp":"2025-06-05 17:57:30"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/4","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"Deleting test case ID: 4","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/4","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"Deleting test case ID: 4","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/37","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"====== Test Finished: Delete a project ======","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/4","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/4","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/4","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/38","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"Deleting project ID: 38","timestamp":"2025-06-05 17:57:31"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/38","timestamp":"2025-06-05 17:57:32"}
+{"level":"info","message":"Cleaned up project with ID: 38","timestamp":"2025-06-05 17:57:32"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-05 17:57:32"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 11:42:47"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 11:42:47"}
+{"level":"info","message":"Creating project: Test Project 1b27328a","timestamp":"2025-06-06 11:42:47"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"Created project with ID: 39 for test case tests","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"Using default section ID: 1 for test case tests","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"Creating test case: Test Case 5d75a56c in section 1","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"Creating test case: Test Case 5d75a56c in section 1","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"Test case created with ID: 5","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"Getting details for test case ID: 5","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/5","timestamp":"2025-06-06 11:42:48"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/5","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"Updating test case ID 5 with title: Updated Test Case 19b9ca43","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/5","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"Updating test case ID: 5 with data: {\"title\":\"Updated Test Case 19b9ca43\",\"priority_id\":3,\"estimate\":\"5m\",\"refs\":\"terreo\",\"custom_preconds\":\"Custodia impedit calcar credo dicta paulatim depopulo aperio tutis. Commodi adimpleo defetiscor degusto asperiores blandior tutis adipiscor nostrum. Enim verbum pectus.\",\"custom_expected\":\"Ter tergum super suasoria soluta. Cilicium sint explicabo termes trans depopulo accedo adipiscor confugo. Sponte quibusdam consectetur adipiscor aeneus tepidus ciminatio subvenio desidero adsidue.\"}","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/5","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"Deleting test case ID: 5","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/5","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"Deleting test case ID: 5","timestamp":"2025-06-06 11:42:49"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/5","timestamp":"2025-06-06 11:42:50"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/5","timestamp":"2025-06-06 11:42:50"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/5","timestamp":"2025-06-06 11:42:50"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 11:42:50"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-06 11:42:50"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/39","timestamp":"2025-06-06 11:42:50"}
+{"level":"info","message":"Deleting project ID: 39","timestamp":"2025-06-06 11:42:50"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/39","timestamp":"2025-06-06 11:42:51"}
+{"level":"info","message":"Cleaned up project with ID: 39","timestamp":"2025-06-06 11:42:51"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 11:42:51"}
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-06 13:03:45"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-06 13:03:45"}
+{"level":"info","message":"Creating project: Test Project 1fdd6194","timestamp":"2025-06-06 13:03:45"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:03:45"}
+{"level":"info","message":"Creating project: Test Project 1fdd6194","timestamp":"2025-06-06 13:03:45"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 13:03:45"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:03:45"}
+{"level":"info","message":"Creating project: Test Project a06db5f8","timestamp":"2025-06-06 13:03:45"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:03:46"}
+{"level":"info","message":"Created project with ID: 40 for test case tests","timestamp":"2025-06-06 13:03:46"}
+{"level":"info","message":"Using default section ID: 1 for test case tests","timestamp":"2025-06-06 13:03:46"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-06 13:03:46"}
+{"level":"info","message":"Creating test case: Test Case a448e5e2 in section 1","timestamp":"2025-06-06 13:03:46"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 13:03:46"}
+{"level":"info","message":"Creating test case: Test Case a448e5e2 in section 1","timestamp":"2025-06-06 13:03:46"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"Test case created with ID: 6","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"Getting details for test case ID: 6","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/6","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"Project created with ID: 41","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"====== Test Finished: Create a new project ======","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"====== Test Started: Get project details ======","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"Getting details for project ID: 41","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/41","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/6","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"Updating test case ID 6 with title: Updated Test Case d7398f9b","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/6","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"Updating test case ID: 6 with data: {\"title\":\"Updated Test Case d7398f9b\",\"priority_id\":2,\"estimate\":\"1m\",\"refs\":\"caput\",\"custom_preconds\":\"Creta circumvenio sui terreo reiciendis depopulo talis. Urbanus surgo solvo. Curiositas cur copiose aliqua antiquus advenio.\",\"custom_expected\":\"Voro stella administratio magni tergo volutabrum attollo. Vinitor beneficium apto cervus suppellex circumvenio tui venio suadeo sumo. Delibero canonicus aperiam.\"}","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/41","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"====== Test Finished: Get project details ======","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"====== Test Started: Update an existing project ======","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"Updating project ID 41 with name: Updated Project f52496e6","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/41","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"Updating project ID: 41 with data: {\"name\":\"Updated Project f52496e6\",\"announcement\":\"Vesco summisse colo aliquam alter tersus deporto vinco sopor. Angulus fugiat succurro. Culpa auxilium stillicidium creber quae.\",\"show_announcement\":true}","timestamp":"2025-06-06 13:03:47"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/41","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"====== Test Finished: Update an existing project ======","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"====== Test Started: Delete a project ======","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"Deleting project ID: 41","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/41","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"Deleting project ID: 41","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/6","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"Deleting test case ID: 6","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/6","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"Deleting test case ID: 6","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/41","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/41","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/6","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/6","timestamp":"2025-06-06 13:03:48"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/41","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"====== Test Finished: Delete a project ======","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/6","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/40","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"Deleting project ID: 40","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/40","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"Cleaned up project with ID: 40","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 13:03:49"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 13:13:36"}
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-06 13:13:36"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:13:36"}
+{"level":"info","message":"Creating project: Test Project be34a820","timestamp":"2025-06-06 13:13:36"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-06 13:13:36"}
+{"level":"info","message":"Creating project: Test Project 1e0ed545","timestamp":"2025-06-06 13:13:36"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:13:36"}
+{"level":"info","message":"Creating project: Test Project 1e0ed545","timestamp":"2025-06-06 13:13:36"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Project created with ID: 42","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Created project with ID: 43 for test case tests","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"====== Test Finished: Create a new project ======","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"====== Test Started: Get project details ======","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Getting details for project ID: 42","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/42","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Using default section ID: 1 for test case tests","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Creating test case: Test Case e1ce935e in section 1","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Creating test case: Test Case e1ce935e in section 1","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/42","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"====== Test Finished: Get project details ======","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"====== Test Started: Update an existing project ======","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Updating project ID 42 with name: Updated Project 1ad746b6","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/42","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Updating project ID: 42 with data: {\"name\":\"Updated Project 1ad746b6\",\"announcement\":\"Aveho pax compono amita ait. Bibo sophismata vilitas a cubicularis. Error coma deorsum cicuta nostrum articulus versus.\",\"show_announcement\":false}","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Test case created with ID: 7","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Getting details for test case ID: 7","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/7","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/42","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"====== Test Finished: Update an existing project ======","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"====== Test Started: Delete a project ======","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Deleting project ID: 42","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/42","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"Deleting project ID: 42","timestamp":"2025-06-06 13:13:37"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/7","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"Updating test case ID 7 with title: Updated Test Case f160e628","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/7","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"Updating test case ID: 7 with data: {\"title\":\"Updated Test Case f160e628\",\"priority_id\":1,\"estimate\":\"2m\",\"refs\":\"copiose\",\"custom_preconds\":\"Aperio acidus defaeco desino acer tergo cunctatio summisse barba infit. Appositus cupiditas cattus velum deficio tibi tolero vicissitudo. Rem animi quisquam fugit allatus pecus vix suadeo tubineus.\",\"custom_expected\":\"Vere cervus cernuus viriliter cupio solus. Taceo verto villa admoveo mollitia acceptus brevis apostolus blanditiis. Odio cribro totam carus natus vita.\"}","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/42","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/42","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/7","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"Deleting test case ID: 7","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/7","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"Deleting test case ID: 7","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/42","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"====== Test Finished: Delete a project ======","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/7","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/7","timestamp":"2025-06-06 13:13:38"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/7","timestamp":"2025-06-06 13:13:39"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 13:13:39"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-06 13:13:39"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/43","timestamp":"2025-06-06 13:13:39"}
+{"level":"info","message":"Deleting project ID: 43","timestamp":"2025-06-06 13:13:39"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/43","timestamp":"2025-06-06 13:13:39"}
+{"level":"info","message":"Cleaned up project with ID: 43","timestamp":"2025-06-06 13:13:39"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 13:13:39"}
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-06 13:14:15"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-06 13:14:15"}
+{"level":"info","message":"Creating project: Test Project 334b4ace","timestamp":"2025-06-06 13:14:15"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:14:15"}
+{"level":"info","message":"Creating project: Test Project 334b4ace","timestamp":"2025-06-06 13:14:15"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 13:14:15"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:14:15"}
+{"level":"info","message":"Creating project: Test Project f713ea8d","timestamp":"2025-06-06 13:14:15"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:14:16"}
+{"level":"info","message":"Project created with ID: 44","timestamp":"2025-06-06 13:14:16"}
+{"level":"info","message":"====== Test Finished: Create a new project ======","timestamp":"2025-06-06 13:14:16"}
+{"level":"info","message":"====== Test Started: Get project details ======","timestamp":"2025-06-06 13:14:16"}
+{"level":"info","message":"Getting details for project ID: 44","timestamp":"2025-06-06 13:14:16"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/44","timestamp":"2025-06-06 13:14:16"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"Created project with ID: 45 for test case tests","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"Using default section ID: 1 for test case tests","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"Creating test case: Test Case 6667adb1 in section 1","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"Creating test case: Test Case 6667adb1 in section 1","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/44","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"====== Test Finished: Get project details ======","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"====== Test Started: Update an existing project ======","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"Updating project ID 44 with name: Updated Project 53b00c18","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/44","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"Updating project ID: 44 with data: {\"name\":\"Updated Project 53b00c18\",\"announcement\":\"Textilis amita deduco attonbitus credo basium corrigo theca. Autus compello arbor deserunt sophismata spectaculum tergo antiquus adeptio cohibeo. Harum vereor defungo aqua verus curriculum voveo apto vorago.\",\"show_announcement\":true}","timestamp":"2025-06-06 13:14:17"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"Test case created with ID: 8","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"Getting details for test case ID: 8","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/8","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/44","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"====== Test Finished: Update an existing project ======","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"====== Test Started: Delete a project ======","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"Deleting project ID: 44","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/44","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"Deleting project ID: 44","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/8","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"Updating test case ID 8 with title: Updated Test Case 56d98c47","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/8","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"Updating test case ID: 8 with data: {\"title\":\"Updated Test Case 56d98c47\",\"priority_id\":2,\"estimate\":\"2m\",\"refs\":\"ulterius\",\"custom_preconds\":\"Delego patior adduco amaritudo concido. Cupiditas atavus acervus caecus velum. Maiores utique vulpes aveho viscus quasi.\",\"custom_expected\":\"Venio tergiversatio uredo nihil cuius. Spectaculum thymbra amo tardus stella ante tremo venio. Textilis amet soluta.\"}","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/44","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/44","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/44","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"====== Test Finished: Delete a project ======","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-06 13:14:18"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/8","timestamp":"2025-06-06 13:14:19"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-06 13:14:19"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-06 13:14:19"}
+{"level":"info","message":"Deleting test case ID: 8","timestamp":"2025-06-06 13:14:19"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/8","timestamp":"2025-06-06 13:14:19"}
+{"level":"info","message":"Deleting test case ID: 8","timestamp":"2025-06-06 13:14:19"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/8","timestamp":"2025-06-06 13:14:19"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/8","timestamp":"2025-06-06 13:14:19"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/8","timestamp":"2025-06-06 13:14:20"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 13:14:20"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-06 13:14:20"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/45","timestamp":"2025-06-06 13:14:20"}
+{"level":"info","message":"Deleting project ID: 45","timestamp":"2025-06-06 13:14:20"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/45","timestamp":"2025-06-06 13:14:20"}
+{"level":"info","message":"Cleaned up project with ID: 45","timestamp":"2025-06-06 13:14:20"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 13:14:20"}
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-06 14:05:20"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-06 14:05:20"}
+{"level":"info","message":"Creating project: Test Project 7b5e2136","timestamp":"2025-06-06 14:05:20"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:05:20"}
+{"level":"info","message":"Creating project: undefined","timestamp":"2025-06-06 14:05:20"}
+{"level":"info","message":"API Response: Status 400 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:05:25"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-06 14:05:25"}
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-06 14:10:17"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-06 14:10:17"}
+{"level":"info","message":"Creating project: Test Project ed9c9839","timestamp":"2025-06-06 14:10:17"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:10:17"}
+{"level":"info","message":"Creating project: Test Project ed9c9839","timestamp":"2025-06-06 14:10:17"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:10:18"}
+{"level":"info","message":"Project created with ID: 46","timestamp":"2025-06-06 14:10:18"}
+{"level":"info","message":"====== Test Finished: Create a new project ======","timestamp":"2025-06-06 14:10:18"}
+{"level":"info","message":"====== Test Started: Get project details ======","timestamp":"2025-06-06 14:10:18"}
+{"level":"info","message":"Getting details for project ID: 46","timestamp":"2025-06-06 14:10:18"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/46","timestamp":"2025-06-06 14:10:18"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/46","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"====== Test Finished: Get project details ======","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"====== Test Started: Update an existing project ======","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"Updating project ID 46 with name: Updated Project 56fd6e13","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/46","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"Updating project ID: 46 with data: {\"name\":\"Updated Project 56fd6e13\",\"announcement\":\"Caterva creptio tempore super creta tepesco. Admitto demens tutis temeritas amor ventus. Claro ipsum pecto teneo quod consequuntur.\",\"showAnnouncement\":true}","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/46","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"====== Test Finished: Update an existing project ======","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"====== Test Started: Delete a project ======","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"Deleting project ID: 46","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/46","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"Deleting project ID: 46","timestamp":"2025-06-06 14:10:19"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/46","timestamp":"2025-06-06 14:10:20"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/46","timestamp":"2025-06-06 14:10:20"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/46","timestamp":"2025-06-06 14:10:20"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 14:10:20"}
+{"level":"info","message":"====== Test Finished: Delete a project ======","timestamp":"2025-06-06 14:10:20"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-06 14:10:20"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 14:11:53"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:11:53"}
+{"level":"info","message":"Creating project: Test Project 1d634ebd","timestamp":"2025-06-06 14:11:53"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"Created project with ID: 47 for test case tests","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"Using default section ID: 1 for test case tests","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"Creating test case: Test Case bc517dbb in section 1","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"Creating test case: Test Case bc517dbb in section 1","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"Test case created with ID: 9","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"Getting details for test case ID: 9","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/9","timestamp":"2025-06-06 14:11:54"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/9","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"Updating test case ID 9 with title: Updated Test Case 37b2e02e","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/9","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"Updating test case ID: 9 with data: {\"title\":\"Updated Test Case 37b2e02e\",\"priority_id\":2,\"estimate\":\"10m\",\"refs\":\"ratione\",\"custom_preconds\":\"Crebro deficio universe copia. Temporibus verus considero at dolorem. Temeritas sulum angelus anser quibusdam atqui.\",\"custom_expected\":\"Quaerat deserunt videlicet aegre caput vix acies. Torqueo certe conforto amiculum velit voro suffragium velum. Cito volup abscido consequatur amplexus commodo accusator terga carus.\"}","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/9","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"Deleting test case ID: 9","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/9","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"Deleting test case ID: 9","timestamp":"2025-06-06 14:11:55"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/9","timestamp":"2025-06-06 14:11:56"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/9","timestamp":"2025-06-06 14:11:56"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/9","timestamp":"2025-06-06 14:11:56"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 14:11:56"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-06 14:11:56"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/47","timestamp":"2025-06-06 14:11:56"}
+{"level":"info","message":"Deleting project ID: 47","timestamp":"2025-06-06 14:11:56"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/47","timestamp":"2025-06-06 14:11:57"}
+{"level":"info","message":"Cleaned up project with ID: 47","timestamp":"2025-06-06 14:11:57"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 14:11:57"}
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-06 14:23:29"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 14:23:29"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-06 14:23:29"}
+{"level":"info","message":"Creating project: Test Project 9918f9ce","timestamp":"2025-06-06 14:23:29"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:23:29"}
+{"level":"info","message":"Creating project: Test Project 9918f9ce","timestamp":"2025-06-06 14:23:29"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:23:29"}
+{"level":"info","message":"Creating project: Test Project f15f80cf","timestamp":"2025-06-06 14:23:29"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:23:30"}
+{"level":"info","message":"Project created with ID: 48","timestamp":"2025-06-06 14:23:30"}
+{"level":"info","message":"====== Test Finished: Create a new project ======","timestamp":"2025-06-06 14:23:30"}
+{"level":"info","message":"====== Test Started: Get project details ======","timestamp":"2025-06-06 14:23:30"}
+{"level":"info","message":"Getting details for project ID: 48","timestamp":"2025-06-06 14:23:30"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/48","timestamp":"2025-06-06 14:23:30"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/48","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"====== Test Finished: Get project details ======","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"====== Test Started: Update an existing project ======","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"Updating project ID 48 with name: Updated Project 691f8936","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/48","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"Updating project ID: 48 with data: {\"name\":\"Updated Project 691f8936\",\"announcement\":\"Asperiores crur tantillus. Demergo timor vociferor ulterius bonus auditor cupiditate stella clamo aveho. Absorbeo aedificium suffragium vulnero denique adsuesco antepono sto sapiente amplitudo.\",\"showAnnouncement\":false}","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"Created project with ID: 49 for test case tests","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"Using default section ID: 1 for test case tests","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"Creating test case: Test Case 829809da in section 1","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"Creating test case: Test Case 829809da in section 1","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/48","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"====== Test Finished: Update an existing project ======","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"====== Test Started: Delete a project ======","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"Deleting project ID: 48","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/48","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"Deleting project ID: 48","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"Test case created with ID: 10","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"Getting details for test case ID: 10","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/10","timestamp":"2025-06-06 14:23:31"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/48","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/48","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/48","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"====== Test Finished: Delete a project ======","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/10","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"Updating test case ID 10 with title: Updated Test Case 392538a3","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/10","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"Updating test case ID: 10 with data: {\"title\":\"Updated Test Case 392538a3\",\"priority_id\":1,\"estimate\":\"7m\",\"refs\":\"vulgus\",\"custom_preconds\":\"Auxilium amaritudo defaeco cubitum sed vito quod deleniti abduco. Convoco peior appositus colligo territo adimpleo tersus adimpleo cetera minima. Teres supra textilis confugo theca id demitto confugo crepusculum.\",\"custom_expected\":\"Tolero occaecati cultellus possimus concido cunctatio exercitationem demulceo textilis. Sub coruscus tenuis culpo ter. Absconditus villa voveo esse assentator acsi degenero perferendis consequuntur spargo.\"}","timestamp":"2025-06-06 14:23:32"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/10","timestamp":"2025-06-06 14:23:33"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-06 14:23:33"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-06 14:23:33"}
+{"level":"info","message":"Deleting test case ID: 10","timestamp":"2025-06-06 14:23:33"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/10","timestamp":"2025-06-06 14:23:33"}
+{"level":"info","message":"Deleting test case ID: 10","timestamp":"2025-06-06 14:23:33"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/10","timestamp":"2025-06-06 14:23:33"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/10","timestamp":"2025-06-06 14:23:33"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/10","timestamp":"2025-06-06 14:23:34"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 14:23:34"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-06 14:23:34"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/49","timestamp":"2025-06-06 14:23:34"}
+{"level":"info","message":"Deleting project ID: 49","timestamp":"2025-06-06 14:23:34"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/49","timestamp":"2025-06-06 14:23:34"}
+{"level":"info","message":"Cleaned up project with ID: 49","timestamp":"2025-06-06 14:23:34"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 14:23:34"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 14:28:10"}
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-06 14:28:10"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:28:10"}
+{"level":"info","message":"Creating project: Test Project 7228b2d4","timestamp":"2025-06-06 14:28:10"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-06 14:28:10"}
+{"level":"info","message":"Creating project: Test Project 61dba9b8","timestamp":"2025-06-06 14:28:10"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:28:10"}
+{"level":"info","message":"Creating project: Test Project 61dba9b8","timestamp":"2025-06-06 14:28:10"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Project created with ID: 50","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"====== Test Finished: Create a new project ======","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"====== Test Started: Get project details ======","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Getting details for project ID: 50","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/50","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Created project with ID: 51 for test case tests","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Using default section ID: 1 for test case tests","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Creating test case: Test Case d774269c in section 1","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Creating test case: Test Case d774269c in section 1","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Test case created with ID: 11","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/50","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"====== Test Finished: Get project details ======","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Getting details for test case ID: 11","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/11","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"====== Test Started: Update an existing project ======","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Updating project ID 50 with name: Updated Project d06a437e","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/50","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Updating project ID: 50 with data: {\"name\":\"Updated Project d06a437e\",\"announcement\":\"Comedo deficio sophismata arceo verumtamen. Contra solvo cum atqui volubilis blanditiis tamquam suscipit. Deprecator averto cupiditate culpa spoliatio angulus aspicio illo acies aperiam.\",\"showAnnouncement\":true}","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/11","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Updating test case ID 11 with title: Updated Test Case 78294a8f","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/11","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"Updating test case ID: 11 with data: {\"title\":\"Updated Test Case 78294a8f\",\"priority_id\":3,\"estimate\":\"6m\",\"refs\":\"vapulus\",\"custom_preconds\":\"Consuasor sequi advenio dapifer repudiandae deputo aer anser conicio utrum. Vereor cubicularis virga capto amissio fuga cultura pecus. Ventito canonicus cohibeo vinum.\",\"custom_expected\":\"Laboriosam tamquam vaco aut quos benigne comburo circumvenio. Patria socius templum truculenter capio thymum. Vinum nam modi.\"}","timestamp":"2025-06-06 14:28:12"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/50","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"====== Test Finished: Update an existing project ======","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"====== Test Started: Delete a project ======","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"Deleting project ID: 50","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/50","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"Deleting project ID: 50","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/50","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/50","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/11","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"Deleting test case ID: 11","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/11","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"Deleting test case ID: 11","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/50","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"====== Test Finished: Delete a project ======","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/11","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/11","timestamp":"2025-06-06 14:28:13"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/11","timestamp":"2025-06-06 14:28:14"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-06 14:28:14"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-06 14:28:14"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/51","timestamp":"2025-06-06 14:28:14"}
+{"level":"info","message":"Deleting project ID: 51","timestamp":"2025-06-06 14:28:14"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/51","timestamp":"2025-06-06 14:28:14"}
+{"level":"info","message":"Cleaned up project with ID: 51","timestamp":"2025-06-06 14:28:14"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-06 14:28:14"}
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-10 17:29:26"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-10 17:29:26"}
+{"level":"info","message":"Creating project: Test Project 88392032","timestamp":"2025-06-10 17:29:26"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-10 17:29:26"}
+{"level":"info","message":"Creating project: Test Project 88392032","timestamp":"2025-06-10 17:29:26"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-10 17:29:27"}
+{"level":"info","message":"Project created with ID: 53","timestamp":"2025-06-10 17:29:27"}
+{"level":"info","message":"====== Test Finished: Create a new project ======","timestamp":"2025-06-10 17:29:27"}
+{"level":"info","message":"====== Test Started: Get project details ======","timestamp":"2025-06-10 17:29:27"}
+{"level":"info","message":"Getting details for project ID: 53","timestamp":"2025-06-10 17:29:27"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/53","timestamp":"2025-06-10 17:29:27"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/53","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"====== Test Finished: Get project details ======","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"====== Test Started: Update an existing project ======","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"Updating project ID 53 with name: Updated Project 11b69ef7","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/53","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"Updating project ID: 53 with data: {\"name\":\"Updated Project 11b69ef7\",\"announcement\":\"Aperio tracto ceno comprehendo. Cimentarius virgo totus thermae vulpes adflicto curtus thymum ventus. Crux altus tenus vix abeo delinquo ipsa.\",\"showAnnouncement\":true}","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/53","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"====== Test Finished: Update an existing project ======","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"====== Test Started: Delete a project ======","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"Deleting project ID: 53","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/53","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"Deleting project ID: 53","timestamp":"2025-06-10 17:29:28"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/53","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/53","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/53","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"====== Test Finished: Delete a project ======","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"Creating project: Test Project adf6815f","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"Created project with ID: 54 for test case tests","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"Using default section ID: 1 for test case tests","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"Creating test case: Test Case 553f2cb1 in section 1","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"Creating test case: Test Case 553f2cb1 in section 1","timestamp":"2025-06-10 17:29:29"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"Test case created with ID: 13","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"Getting details for test case ID: 13","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/13","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/13","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"Updating test case ID 13 with title: Updated Test Case b8d390d9","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/13","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"Updating test case ID: 13 with data: {\"title\":\"Updated Test Case b8d390d9\",\"priority_id\":1,\"estimate\":\"9m\",\"refs\":\"vulgivagus\",\"custom_preconds\":\"Beatus quod accommodo adeptio temperantia depono demergo cribro. Virgo patria necessitatibus ceno aetas vacuus annus tribuo appello. Virtus adduco velociter creator.\",\"custom_expected\":\"Dolor tabgo degero armarium tristis. Ea creber vetus. Varius bos arma cervus ambulo sapiente benigne odit aptus celebrer.\"}","timestamp":"2025-06-10 17:29:31"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/13","timestamp":"2025-06-10 17:29:32"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-10 17:29:32"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-10 17:29:32"}
+{"level":"info","message":"Deleting test case ID: 13","timestamp":"2025-06-10 17:29:32"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/13","timestamp":"2025-06-10 17:29:32"}
+{"level":"info","message":"Deleting test case ID: 13","timestamp":"2025-06-10 17:29:32"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/13","timestamp":"2025-06-10 17:29:32"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/13","timestamp":"2025-06-10 17:29:32"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/13","timestamp":"2025-06-10 17:29:33"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-10 17:29:33"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-10 17:29:33"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/54","timestamp":"2025-06-10 17:29:33"}
+{"level":"info","message":"Deleting project ID: 54","timestamp":"2025-06-10 17:29:33"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/54","timestamp":"2025-06-10 17:29:33"}
+{"level":"info","message":"Cleaned up project with ID: 54","timestamp":"2025-06-10 17:29:33"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-10 17:29:33"}
+{"level":"info","message":"=== Starting TestRail Project Management API Tests ===","timestamp":"2025-06-10 18:46:05"}
+{"level":"info","message":"====== Test Started: Create a new project ======","timestamp":"2025-06-10 18:46:05"}
+{"level":"info","message":"Creating project: Test Project 8ed239c1","timestamp":"2025-06-10 18:46:05"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-10 18:46:05"}
+{"level":"info","message":"Creating project: Test Project 8ed239c1","timestamp":"2025-06-10 18:46:05"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"Project created with ID: 55","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"====== Test Finished: Create a new project ======","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"====== Test Started: Get project details ======","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"Getting details for project ID: 55","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/55","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/55","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"====== Test Finished: Get project details ======","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"====== Test Started: Update an existing project ======","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"Updating project ID 55 with name: Updated Project bd84e712","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/55","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"Updating project ID: 55 with data: {\"name\":\"Updated Project bd84e712\",\"announcement\":\"Ambulo adsum attero sponte ad centum abduco denego. Corpus censura consuasor amor appono. Utpote credo vomica valeo coniecto.\",\"showAnnouncement\":false}","timestamp":"2025-06-10 18:46:07"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_project/55","timestamp":"2025-06-10 18:46:08"}
+{"level":"info","message":"====== Test Finished: Update an existing project ======","timestamp":"2025-06-10 18:46:08"}
+{"level":"info","message":"====== Test Started: Delete a project ======","timestamp":"2025-06-10 18:46:08"}
+{"level":"info","message":"Deleting project ID: 55","timestamp":"2025-06-10 18:46:08"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/55","timestamp":"2025-06-10 18:46:08"}
+{"level":"info","message":"Deleting project ID: 55","timestamp":"2025-06-10 18:46:08"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/55","timestamp":"2025-06-10 18:46:08"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/55","timestamp":"2025-06-10 18:46:08"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_project/55","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"====== Test Finished: Delete a project ======","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"=== Completed TestRail Project Management API Tests ===","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"=== Starting TestRail Test Case Management API Tests ===","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"Creating project: Test Project 16dd3453","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"Created project with ID: 56 for test case tests","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"Using default section ID: 1 for test case tests","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"====== Test Started: Create a new test case ======","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"Creating test case: Test Case e1252b7d in section 1","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"Creating test case: Test Case e1252b7d in section 1","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_case/1","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"Test case created with ID: 14","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"====== Test Finished: Create a new test case ======","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"====== Test Started: Get test case details ======","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"Getting details for test case ID: 14","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/14","timestamp":"2025-06-10 18:46:09"}
+{"level":"info","message":"API Response: Status 200 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/14","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"====== Test Finished: Get test case details ======","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"====== Test Started: Update an existing test case ======","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"Updating test case ID 14 with title: Updated Test Case 8e228750","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/14","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"Updating test case ID: 14 with data: {\"title\":\"Updated Test Case 8e228750\",\"priority_id\":1,\"estimate\":\"6m\",\"refs\":\"aveho\",\"custom_preconds\":\"Viridis tremo denuncio. A cimentarius paulatim odio vindico agnosco crinis necessitatibus facilis. Communis qui sordeo thema nostrum cenaculum texo cohibeo viriliter.\",\"custom_expected\":\"Acervus stips sulum voluptatem tempora. Creo vorago celer custodia vos voluptate. Vicissitudo laborum accedo ascisco adsum cognomen.\"}","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/update_case/14","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"====== Test Finished: Update an existing test case ======","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"====== Test Started: Delete a test case ======","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"Deleting test case ID: 14","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/14","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"Deleting test case ID: 14","timestamp":"2025-06-10 18:46:10"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_case/14","timestamp":"2025-06-10 18:46:11"}
+{"level":"info","message":"API Call: GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/14","timestamp":"2025-06-10 18:46:11"}
+{"level":"info","message":"API Response: Status 400 for GET https://ooobnal.testrail.io/index.php?/api/v2/get_case/14","timestamp":"2025-06-10 18:46:11"}
+{"level":"info","message":"Delete verification: Got status 400 as expected","timestamp":"2025-06-10 18:46:11"}
+{"level":"info","message":"====== Test Finished: Delete a test case ======","timestamp":"2025-06-10 18:46:11"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/56","timestamp":"2025-06-10 18:46:11"}
+{"level":"info","message":"Deleting project ID: 56","timestamp":"2025-06-10 18:46:11"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/56","timestamp":"2025-06-10 18:46:11"}
+{"level":"info","message":"Cleaned up project with ID: 56","timestamp":"2025-06-10 18:46:11"}
+{"level":"info","message":"=== Completed TestRail Test Case Management API Tests ===","timestamp":"2025-06-10 18:46:11"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 13:24:22"}
+{"level":"info","message":"Creating project via API: Test Project bcb21499","timestamp":"2025-06-16 13:24:22"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 13:24:22"}
+{"level":"info","message":"Creating project: Test Project bcb21499","timestamp":"2025-06-16 13:24:22"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 13:24:24"}
+{"level":"info","message":"Project created with ID: 57","timestamp":"2025-06-16 13:24:24"}
+{"level":"info","message":"Project setup completed. Will create test case: UI Test Case 1750069464067","timestamp":"2025-06-16 13:24:24"}
+{"level":"info","message":"Cleaning up - deleting project ID: 57","timestamp":"2025-06-16 13:25:20"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/57","timestamp":"2025-06-16 13:25:20"}
+{"level":"info","message":"Deleting project ID: 57","timestamp":"2025-06-16 13:25:20"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/57","timestamp":"2025-06-16 13:25:20"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 13:25:20"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 13:25:20"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 13:25:22"}
+{"level":"info","message":"Creating project via API: Test Project bf3b5094","timestamp":"2025-06-16 13:25:22"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 13:25:22"}
+{"level":"info","message":"Creating project: Test Project bf3b5094","timestamp":"2025-06-16 13:25:22"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 13:25:23"}
+{"level":"info","message":"Project created with ID: 58","timestamp":"2025-06-16 13:25:23"}
+{"level":"info","message":"Project setup completed. Will create test case: UI Test Case 1750069523721","timestamp":"2025-06-16 13:25:23"}
+{"level":"info","message":"Cleaning up - deleting project ID: 58","timestamp":"2025-06-16 13:26:23"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/58","timestamp":"2025-06-16 13:26:23"}
+{"level":"info","message":"Deleting project ID: 58","timestamp":"2025-06-16 13:26:23"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/58","timestamp":"2025-06-16 13:26:24"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 13:26:24"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 13:26:24"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 13:26:30"}
+{"level":"info","message":"Creating project via API: Test Project ebe37894","timestamp":"2025-06-16 13:26:30"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 13:26:30"}
+{"level":"info","message":"Creating project: Test Project ebe37894","timestamp":"2025-06-16 13:26:30"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 13:26:32"}
+{"level":"info","message":"Project created with ID: 59","timestamp":"2025-06-16 13:26:32"}
+{"level":"info","message":"Project setup completed. Will create test case: UI Test Case 1750069592077","timestamp":"2025-06-16 13:26:32"}
+{"level":"info","message":"Cleaning up - deleting project ID: 59","timestamp":"2025-06-16 13:27:24"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/59","timestamp":"2025-06-16 13:27:24"}
+{"level":"info","message":"Deleting project ID: 59","timestamp":"2025-06-16 13:27:24"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/59","timestamp":"2025-06-16 13:27:25"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 13:27:25"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 13:27:25"}
+{"level":"info","message":"Creating project via API: Test Project 11b67e51","timestamp":"2025-06-16 14:09:04"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:09:04"}
+{"level":"info","message":"Creating project: Test Project 11b67e51","timestamp":"2025-06-16 14:09:04"}
+{"level":"info","message":"Creating project via API: Test Project 5b48dcbb","timestamp":"2025-06-16 14:09:06"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:09:06"}
+{"level":"info","message":"Creating project: Test Project 5b48dcbb","timestamp":"2025-06-16 14:09:06"}
+{"level":"info","message":"Creating project via API: Test Project 0cd60b84","timestamp":"2025-06-16 14:09:07"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:09:07"}
+{"level":"info","message":"Creating project: Test Project 0cd60b84","timestamp":"2025-06-16 14:09:07"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:11:01"}
+{"level":"info","message":"Creating project via API: Test Project 9f661caf","timestamp":"2025-06-16 14:11:01"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:11:01"}
+{"level":"info","message":"Creating project: Test Project 9f661caf","timestamp":"2025-06-16 14:11:01"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:11:02"}
+{"level":"info","message":"Project created successfully with ID: 60","timestamp":"2025-06-16 14:11:02"}
+{"level":"info","message":"Will create test case: UI Test Case 1750072264996","timestamp":"2025-06-16 14:11:04"}
+{"level":"info","message":"Navigating to project: Test Project 9f661caf (ID: 60)","timestamp":"2025-06-16 14:11:31"}
+{"level":"info","message":"Deleting project via API: Test Project 9f661caf (ID: 60)","timestamp":"2025-06-16 14:11:48"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/60","timestamp":"2025-06-16 14:11:48"}
+{"level":"info","message":"Deleting project ID: 60","timestamp":"2025-06-16 14:11:48"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/60","timestamp":"2025-06-16 14:11:48"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 14:11:48"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:11:48"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:11:50"}
+{"level":"info","message":"Creating project via API: Test Project 51844595","timestamp":"2025-06-16 14:11:50"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:11:50"}
+{"level":"info","message":"Creating project: Test Project 51844595","timestamp":"2025-06-16 14:11:50"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:11:51"}
+{"level":"info","message":"Project created successfully with ID: 61","timestamp":"2025-06-16 14:11:51"}
+{"level":"info","message":"Will create test case: UI Test Case 1750072311355","timestamp":"2025-06-16 14:11:51"}
+{"level":"info","message":"Navigating to project: Test Project 51844595 (ID: 61)","timestamp":"2025-06-16 14:11:59"}
+{"level":"info","message":"Deleting project via API: Test Project 51844595 (ID: 61)","timestamp":"2025-06-16 14:12:17"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/61","timestamp":"2025-06-16 14:12:17"}
+{"level":"info","message":"Deleting project ID: 61","timestamp":"2025-06-16 14:12:17"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/61","timestamp":"2025-06-16 14:12:17"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 14:12:17"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:12:18"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:12:20"}
+{"level":"info","message":"Creating project via API: Test Project b647360d","timestamp":"2025-06-16 14:12:20"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:12:20"}
+{"level":"info","message":"Creating project: Test Project b647360d","timestamp":"2025-06-16 14:12:20"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:12:21"}
+{"level":"info","message":"Project created successfully with ID: 62","timestamp":"2025-06-16 14:12:21"}
+{"level":"info","message":"Will create test case: UI Test Case 1750072341911","timestamp":"2025-06-16 14:12:21"}
+{"level":"info","message":"Navigating to project: Test Project b647360d (ID: 62)","timestamp":"2025-06-16 14:12:43"}
+{"level":"info","message":"Deleting project via API: Test Project b647360d (ID: 62)","timestamp":"2025-06-16 14:13:01"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/62","timestamp":"2025-06-16 14:13:01"}
+{"level":"info","message":"Deleting project ID: 62","timestamp":"2025-06-16 14:13:01"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/62","timestamp":"2025-06-16 14:13:01"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 14:13:01"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:13:01"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:15:41"}
+{"level":"info","message":"Creating project via API: Test Project 8509745b","timestamp":"2025-06-16 14:15:41"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:15:41"}
+{"level":"info","message":"Creating project: Test Project 8509745b","timestamp":"2025-06-16 14:15:41"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:15:42"}
+{"level":"info","message":"Project created successfully with ID: 63","timestamp":"2025-06-16 14:15:42"}
+{"level":"info","message":"Will create test case: UI Test Case 1750072543267","timestamp":"2025-06-16 14:15:43"}
+{"level":"info","message":"Navigating to project: Test Project 8509745b (ID: 63)","timestamp":"2025-06-16 14:15:52"}
+{"level":"info","message":"Deleting project via API: Test Project 8509745b (ID: 63)","timestamp":"2025-06-16 14:16:05"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/63","timestamp":"2025-06-16 14:16:05"}
+{"level":"info","message":"Deleting project ID: 63","timestamp":"2025-06-16 14:16:05"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/63","timestamp":"2025-06-16 14:16:05"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 14:16:05"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:16:05"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:16:07"}
+{"level":"info","message":"Creating project via API: Test Project c36136fb","timestamp":"2025-06-16 14:16:07"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:16:07"}
+{"level":"info","message":"Creating project: Test Project c36136fb","timestamp":"2025-06-16 14:16:07"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:16:08"}
+{"level":"info","message":"Project created successfully with ID: 64","timestamp":"2025-06-16 14:16:08"}
+{"level":"info","message":"Will create test case: UI Test Case 1750072568740","timestamp":"2025-06-16 14:16:08"}
+{"level":"info","message":"Navigating to project: Test Project c36136fb (ID: 64)","timestamp":"2025-06-16 14:16:17"}
+{"level":"info","message":"Deleting project via API: Test Project c36136fb (ID: 64)","timestamp":"2025-06-16 14:16:29"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/64","timestamp":"2025-06-16 14:16:29"}
+{"level":"info","message":"Deleting project ID: 64","timestamp":"2025-06-16 14:16:29"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/64","timestamp":"2025-06-16 14:16:30"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 14:16:30"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:16:30"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:16:37"}
+{"level":"info","message":"Creating project via API: Test Project b7835c3b","timestamp":"2025-06-16 14:16:37"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:16:37"}
+{"level":"info","message":"Creating project: Test Project b7835c3b","timestamp":"2025-06-16 14:16:37"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:16:38"}
+{"level":"info","message":"Project created successfully with ID: 65","timestamp":"2025-06-16 14:16:38"}
+{"level":"info","message":"Will create test case: UI Test Case 1750072598949","timestamp":"2025-06-16 14:16:38"}
+{"level":"info","message":"Navigating to project: Test Project b7835c3b (ID: 65)","timestamp":"2025-06-16 14:16:47"}
+{"level":"info","message":"Deleting project via API: Test Project b7835c3b (ID: 65)","timestamp":"2025-06-16 14:16:59"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/65","timestamp":"2025-06-16 14:16:59"}
+{"level":"info","message":"Deleting project ID: 65","timestamp":"2025-06-16 14:16:59"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/65","timestamp":"2025-06-16 14:16:59"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 14:16:59"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:16:59"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:40:15"}
+{"level":"info","message":"Creating project via API: Test Project bee9112a","timestamp":"2025-06-16 14:40:15"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:40:15"}
+{"level":"info","message":"Creating project: Test Project bee9112a","timestamp":"2025-06-16 14:40:15"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:40:16"}
+{"level":"info","message":"Project created successfully with ID: 66","timestamp":"2025-06-16 14:40:16"}
+{"level":"info","message":"Will create test case: UI Test Case 1750074017121","timestamp":"2025-06-16 14:40:17"}
+{"level":"info","message":"Navigating to project: Test Project bee9112a (ID: 66)","timestamp":"2025-06-16 14:40:25"}
+{"level":"info","message":"Initial test case count: 0","timestamp":"2025-06-16 14:40:32"}
+{"level":"info","message":"Clicking Add Test Case button","timestamp":"2025-06-16 14:40:32"}
+{"level":"info","message":"Deleting project via API: Test Project bee9112a (ID: 66)","timestamp":"2025-06-16 14:40:47"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/66","timestamp":"2025-06-16 14:40:47"}
+{"level":"info","message":"Deleting project ID: 66","timestamp":"2025-06-16 14:40:47"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/66","timestamp":"2025-06-16 14:40:47"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 14:40:47"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:40:47"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:40:49"}
+{"level":"info","message":"Creating project via API: Test Project e188968d","timestamp":"2025-06-16 14:40:49"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:40:49"}
+{"level":"info","message":"Creating project: Test Project e188968d","timestamp":"2025-06-16 14:40:49"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:40:50"}
+{"level":"info","message":"Project created successfully with ID: 67","timestamp":"2025-06-16 14:40:50"}
+{"level":"info","message":"Will create test case: UI Test Case 1750074050835","timestamp":"2025-06-16 14:40:50"}
+{"level":"info","message":"Navigating to project: Test Project e188968d (ID: 67)","timestamp":"2025-06-16 14:40:59"}
+{"level":"info","message":"Initial test case count: 0","timestamp":"2025-06-16 14:41:06"}
+{"level":"info","message":"Clicking Add Test Case button","timestamp":"2025-06-16 14:41:06"}
+{"level":"info","message":"Deleting project via API: Test Project e188968d (ID: 67)","timestamp":"2025-06-16 14:41:22"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/67","timestamp":"2025-06-16 14:41:22"}
+{"level":"info","message":"Deleting project ID: 67","timestamp":"2025-06-16 14:41:22"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/67","timestamp":"2025-06-16 14:41:22"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 14:41:22"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:41:23"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:41:25"}
+{"level":"info","message":"Creating project via API: Test Project 1d760146","timestamp":"2025-06-16 14:41:25"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:41:25"}
+{"level":"info","message":"Creating project: Test Project 1d760146","timestamp":"2025-06-16 14:41:25"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 14:41:26"}
+{"level":"info","message":"Project created successfully with ID: 68","timestamp":"2025-06-16 14:41:26"}
+{"level":"info","message":"Will create test case: UI Test Case 1750074086767","timestamp":"2025-06-16 14:41:26"}
+{"level":"info","message":"Navigating to project: Test Project 1d760146 (ID: 68)","timestamp":"2025-06-16 14:41:35"}
+{"level":"info","message":"Initial test case count: 0","timestamp":"2025-06-16 14:41:42"}
+{"level":"info","message":"Clicking Add Test Case button","timestamp":"2025-06-16 14:41:42"}
+{"level":"info","message":"Deleting project via API: Test Project 1d760146 (ID: 68)","timestamp":"2025-06-16 14:41:57"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/68","timestamp":"2025-06-16 14:41:57"}
+{"level":"info","message":"Deleting project ID: 68","timestamp":"2025-06-16 14:41:57"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/68","timestamp":"2025-06-16 14:41:58"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 14:41:58"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 14:41:58"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 21:27:22"}
+{"level":"info","message":"Creating project via API: Test Project f15761be","timestamp":"2025-06-16 21:27:22"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 21:27:22"}
+{"level":"info","message":"Creating project: Test Project f15761be","timestamp":"2025-06-16 21:27:22"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 21:27:24"}
+{"level":"info","message":"Project created successfully with ID: 69","timestamp":"2025-06-16 21:27:24"}
+{"level":"info","message":"Will create test case: UI Test Case 1750098444925","timestamp":"2025-06-16 21:27:24"}
+{"level":"info","message":"Navigating to project: Test Project f15761be (ID: 69)","timestamp":"2025-06-16 21:27:38"}
+{"level":"info","message":"Initial test case count: 0","timestamp":"2025-06-16 21:27:45"}
+{"level":"info","message":"Navigating to Add Test Case page","timestamp":"2025-06-16 21:27:45"}
+{"level":"info","message":"Deleting project via API: Test Project f15761be (ID: 69)","timestamp":"2025-06-16 21:28:17"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/69","timestamp":"2025-06-16 21:28:17"}
+{"level":"info","message":"Deleting project ID: 69","timestamp":"2025-06-16 21:28:17"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/69","timestamp":"2025-06-16 21:28:17"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 21:28:17"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 21:28:18"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 21:28:19"}
+{"level":"info","message":"Creating project via API: Test Project 8cb798fa","timestamp":"2025-06-16 21:28:19"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 21:28:19"}
+{"level":"info","message":"Creating project: Test Project 8cb798fa","timestamp":"2025-06-16 21:28:19"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 21:28:20"}
+{"level":"info","message":"Project created successfully with ID: 70","timestamp":"2025-06-16 21:28:20"}
+{"level":"info","message":"Will create test case: UI Test Case 1750098501064","timestamp":"2025-06-16 21:28:21"}
+{"level":"info","message":"Navigating to project: Test Project 8cb798fa (ID: 70)","timestamp":"2025-06-16 21:28:30"}
+{"level":"info","message":"Initial test case count: 0","timestamp":"2025-06-16 21:28:37"}
+{"level":"info","message":"Navigating to Add Test Case page","timestamp":"2025-06-16 21:28:37"}
+{"level":"info","message":"Deleting project via API: Test Project 8cb798fa (ID: 70)","timestamp":"2025-06-16 21:29:10"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/70","timestamp":"2025-06-16 21:29:10"}
+{"level":"info","message":"Deleting project ID: 70","timestamp":"2025-06-16 21:29:10"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/70","timestamp":"2025-06-16 21:29:10"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 21:29:10"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 21:29:11"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 21:29:19"}
+{"level":"info","message":"Creating project via API: Test Project 9fb215da","timestamp":"2025-06-16 21:29:19"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 21:29:19"}
+{"level":"info","message":"Creating project: Test Project 9fb215da","timestamp":"2025-06-16 21:29:19"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-16 21:29:20"}
+{"level":"info","message":"Project created successfully with ID: 71","timestamp":"2025-06-16 21:29:20"}
+{"level":"info","message":"Will create test case: UI Test Case 1750098560809","timestamp":"2025-06-16 21:29:20"}
+{"level":"info","message":"Navigating to project: Test Project 9fb215da (ID: 71)","timestamp":"2025-06-16 21:29:29"}
+{"level":"info","message":"Initial test case count: 0","timestamp":"2025-06-16 21:29:36"}
+{"level":"info","message":"Navigating to Add Test Case page","timestamp":"2025-06-16 21:29:36"}
+{"level":"info","message":"Deleting project via API: Test Project 9fb215da (ID: 71)","timestamp":"2025-06-16 21:30:08"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/71","timestamp":"2025-06-16 21:30:08"}
+{"level":"info","message":"Deleting project ID: 71","timestamp":"2025-06-16 21:30:08"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/71","timestamp":"2025-06-16 21:30:08"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-16 21:30:08"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-16 21:30:08"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:23:54"}
+{"level":"info","message":"Creating project via API: Test Project b2a56e87","timestamp":"2025-06-17 09:23:54"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:23:54"}
+{"level":"info","message":"Creating project: Test Project b2a56e87","timestamp":"2025-06-17 09:23:54"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:23:55"}
+{"level":"info","message":"Project created successfully with ID: 72","timestamp":"2025-06-17 09:23:55"}
+{"level":"info","message":"Navigating to projects page","timestamp":"2025-06-17 09:24:05"}
+{"level":"info","message":"Verifying project Test Project b2a56e87 (ID: 72) is visible in UI","timestamp":"2025-06-17 09:24:07"}
+{"level":"info","message":"Deleting project via API: Test Project b2a56e87 (ID: 72)","timestamp":"2025-06-17 09:24:18"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/72","timestamp":"2025-06-17 09:24:18"}
+{"level":"info","message":"Deleting project ID: 72","timestamp":"2025-06-17 09:24:18"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/72","timestamp":"2025-06-17 09:24:18"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-17 09:24:18"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:24:18"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:24:20"}
+{"level":"info","message":"Creating project via API: Test Project 1c5ef010","timestamp":"2025-06-17 09:24:20"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:24:20"}
+{"level":"info","message":"Creating project: Test Project 1c5ef010","timestamp":"2025-06-17 09:24:20"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:24:21"}
+{"level":"info","message":"Project created successfully with ID: 73","timestamp":"2025-06-17 09:24:21"}
+{"level":"info","message":"Navigating to projects page","timestamp":"2025-06-17 09:24:31"}
+{"level":"info","message":"Verifying project Test Project 1c5ef010 (ID: 73) is visible in UI","timestamp":"2025-06-17 09:24:33"}
+{"level":"info","message":"Deleting project via API: Test Project 1c5ef010 (ID: 73)","timestamp":"2025-06-17 09:24:44"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/73","timestamp":"2025-06-17 09:24:44"}
+{"level":"info","message":"Deleting project ID: 73","timestamp":"2025-06-17 09:24:44"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/73","timestamp":"2025-06-17 09:24:44"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-17 09:24:44"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:24:45"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:24:51"}
+{"level":"info","message":"Creating project via API: Test Project 257a9e85","timestamp":"2025-06-17 09:24:51"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:24:51"}
+{"level":"info","message":"Creating project: Test Project 257a9e85","timestamp":"2025-06-17 09:24:51"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:24:52"}
+{"level":"info","message":"Project created successfully with ID: 74","timestamp":"2025-06-17 09:24:52"}
+{"level":"info","message":"Navigating to projects page","timestamp":"2025-06-17 09:25:03"}
+{"level":"info","message":"Verifying project Test Project 257a9e85 (ID: 74) is visible in UI","timestamp":"2025-06-17 09:25:05"}
+{"level":"info","message":"Deleting project via API: Test Project 257a9e85 (ID: 74)","timestamp":"2025-06-17 09:25:15"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/74","timestamp":"2025-06-17 09:25:15"}
+{"level":"info","message":"Deleting project ID: 74","timestamp":"2025-06-17 09:25:15"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/74","timestamp":"2025-06-17 09:25:15"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-17 09:25:15"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:25:15"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:26:05"}
+{"level":"info","message":"Creating project via API: Test Project bfada64d","timestamp":"2025-06-17 09:26:05"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:26:05"}
+{"level":"info","message":"Creating project: Test Project bfada64d","timestamp":"2025-06-17 09:26:05"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:26:06"}
+{"level":"info","message":"Project created successfully with ID: 75","timestamp":"2025-06-17 09:26:06"}
+{"level":"info","message":"Navigating to projects page","timestamp":"2025-06-17 09:26:16"}
+{"level":"info","message":"Verifying project Test Project bfada64d (ID: 75) is visible in UI","timestamp":"2025-06-17 09:26:18"}
+{"level":"info","message":"Deleting project via API: Test Project bfada64d (ID: 75)","timestamp":"2025-06-17 09:26:28"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/75","timestamp":"2025-06-17 09:26:28"}
+{"level":"info","message":"Deleting project ID: 75","timestamp":"2025-06-17 09:26:28"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/75","timestamp":"2025-06-17 09:26:28"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-17 09:26:28"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:26:28"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:26:30"}
+{"level":"info","message":"Creating project via API: Test Project 489fadab","timestamp":"2025-06-17 09:26:30"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:26:30"}
+{"level":"info","message":"Creating project: Test Project 489fadab","timestamp":"2025-06-17 09:26:30"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:26:31"}
+{"level":"info","message":"Project created successfully with ID: 76","timestamp":"2025-06-17 09:26:31"}
+{"level":"info","message":"Navigating to projects page","timestamp":"2025-06-17 09:26:41"}
+{"level":"info","message":"Verifying project Test Project 489fadab (ID: 76) is visible in UI","timestamp":"2025-06-17 09:26:43"}
+{"level":"info","message":"Deleting project via API: Test Project 489fadab (ID: 76)","timestamp":"2025-06-17 09:26:53"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/76","timestamp":"2025-06-17 09:26:53"}
+{"level":"info","message":"Deleting project ID: 76","timestamp":"2025-06-17 09:26:53"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/76","timestamp":"2025-06-17 09:26:54"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-17 09:26:54"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:26:54"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:27:01"}
+{"level":"info","message":"Creating project via API: Test Project cf59fecd","timestamp":"2025-06-17 09:27:01"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:27:01"}
+{"level":"info","message":"Creating project: Test Project cf59fecd","timestamp":"2025-06-17 09:27:01"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:27:02"}
+{"level":"info","message":"Project created successfully with ID: 77","timestamp":"2025-06-17 09:27:02"}
+{"level":"info","message":"Navigating to projects page","timestamp":"2025-06-17 09:27:11"}
+{"level":"info","message":"Verifying project Test Project cf59fecd (ID: 77) is visible in UI","timestamp":"2025-06-17 09:27:13"}
+{"level":"info","message":"Deleting project via API: Test Project cf59fecd (ID: 77)","timestamp":"2025-06-17 09:27:23"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/77","timestamp":"2025-06-17 09:27:23"}
+{"level":"info","message":"Deleting project ID: 77","timestamp":"2025-06-17 09:27:23"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/77","timestamp":"2025-06-17 09:27:24"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-17 09:27:24"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:27:24"}
+{"level":"info","message":"=== Starting TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:28:20"}
+{"level":"info","message":"Creating project via API: Test Project 9f9d242a","timestamp":"2025-06-17 09:28:20"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:28:20"}
+{"level":"info","message":"Creating project: Test Project 9f9d242a","timestamp":"2025-06-17 09:28:20"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/add_project","timestamp":"2025-06-17 09:28:21"}
+{"level":"info","message":"Project created successfully with ID: 78","timestamp":"2025-06-17 09:28:21"}
+{"level":"info","message":"Navigating to projects page","timestamp":"2025-06-17 09:28:31"}
+{"level":"info","message":"Verifying project Test Project 9f9d242a (ID: 78) exists in UI","timestamp":"2025-06-17 09:28:33"}
+{"level":"info","message":"Found 1 project elements with ID 78","timestamp":"2025-06-17 09:28:33"}
+{"level":"info","message":"Found project with tooltip text: Test Project 9f9d242a","timestamp":"2025-06-17 09:28:33"}
+{"level":"info","message":"Successfully verified project created via API exists in UI","timestamp":"2025-06-17 09:28:33"}
+{"level":"info","message":"Project created via API successfully verified in UI","timestamp":"2025-06-17 09:28:33"}
+{"level":"info","message":"Deleting project via API: Test Project 9f9d242a (ID: 78)","timestamp":"2025-06-17 09:28:33"}
+{"level":"info","message":"API Call: POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/78","timestamp":"2025-06-17 09:28:33"}
+{"level":"info","message":"Deleting project ID: 78","timestamp":"2025-06-17 09:28:33"}
+{"level":"info","message":"API Response: Status 200 for POST https://ooobnal.testrail.io/index.php?/api/v2/delete_project/78","timestamp":"2025-06-17 09:28:34"}
+{"level":"info","message":"Project deleted successfully","timestamp":"2025-06-17 09:28:34"}
+{"level":"info","message":"=== Completed TestRail Test Case Management UI Tests ===","timestamp":"2025-06-17 09:28:34"}
