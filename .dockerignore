@@ -1,0 +1,43 @@
+# Git
+.git
+.gitignore
+.github
+
+# Node.js
+node_modules
+npm-debug.log
+
+# Playwright
+test-results
+playwright-report
+
+# Logs
+logs
+*.log
+
+# Environment variables
+.env
+.env.*
+!.env.ci
+
+# IDE configs
+.vscode
+.idea
+*.sublime*
+*.swp
+*.swo
+
+# Docs
+docs/
+*.md
+LICENSE
+
+# Cache and tmp files
+.npm
+.eslintcache
+.stylelintcache
+.tmp
+.temp
+.cache
+.DS_Store
+Thumbs.db

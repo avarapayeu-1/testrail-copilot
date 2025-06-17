@@ -1,0 +1,48 @@
+services:
+  # Service for running API tests
+  api-tests:
+    build: .
+    command: npm run test:api
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+      - ./logs:/app/logs
+    env_file: .env
+    environment:
+      - CI=true
+      
+  # Service for running UI tests (with browser)
+  ui-tests:
+    build: .
+    command: npm run test:ui
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+      - ./logs:/app/logs
+    env_file: .env
+    environment:
+      - CI=true
+  
+  # Service for running all e2e tests (UI + integration)
+  e2e-tests:
+    build: .
+    command: npm run test:e2e
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+      - ./logs:/app/logs
+    env_file: .env
+    environment:
+      - CI=true
+  
+  # Service for running all tests
+  all-tests:
+    build: .
+    command: npm run test
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+      - ./logs:/app/logs
+    env_file: .env
+    environment:
+      - CI=true

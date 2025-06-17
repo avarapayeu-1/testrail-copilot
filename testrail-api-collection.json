@@ -1,0 +1,638 @@
+{
+	"info": {
+		"_postman_id": "63723af9-4a61-4f4c-9245-75e901efba29",
+		"name": "TestRail API Collection",
+		"description": "A collection of API tests for TestRail, exported from the testrail-copilot project.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "{{TESTRAIL_API_KEY}}",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "{{TESTRAIL_EMAIL}}",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://your-instance.testrail.io/index.php?/api/v2",
+			"type": "string"
+		},
+		{
+			"key": "projectId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "sectionId",
+			"value": "1",
+			"type": "string"
+		},
+		{
+			"key": "caseId",
+			"value": "",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "Project Management",
+			"item": [
+				{
+					"name": "Create New Project",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Project is created successfully\", function () {",
+									"    pm.expect(response.id).to.be.a('number');",
+									"    pm.expect(response.name).to.eql(pm.variables.get(\"projectName\"));",
+									"    pm.expect(response.announcement).to.eql(pm.variables.get(\"projectAnnouncement\"));",
+									"    pm.expect(response.show_announcement).to.eql(pm.variables.get(\"projectShowAnnouncement\"));",
+									"});",
+									"",
+									"// Save project ID for subsequent tests",
+									"if (response && response.id) {",
+									"    pm.collectionVariables.set(\"projectId\", response.id);",
+									"    console.log(\"Project created with ID: \" + response.id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Generate random project data",
+									"const projectName = \"Test Project-\" + Math.floor(Math.random() * 10000);",
+									"const projectAnnouncement = \"This is an automated test project created on \" + new Date().toISOString();",
+									"const projectShowAnnouncement = false;",
+									"",
+									"// Set variables for testing",
+									"pm.variables.set(\"projectName\", projectName);",
+									"pm.variables.set(\"projectAnnouncement\", projectAnnouncement);",
+									"pm.variables.set(\"projectShowAnnouncement\", projectShowAnnouncement);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"{{projectName}}\",\n    \"announcement\": \"{{projectAnnouncement}}\",\n    \"show_announcement\": {{projectShowAnnouncement}}\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/add_project",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"add_project"
+							]
+						},
+						"description": "Create a new project in TestRail"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project Details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Project details are returned correctly\", function () {",
+									"    pm.expect(response.id).to.eql(parseInt(pm.collectionVariables.get(\"projectId\")));",
+									"    pm.expect(response.name).to.be.a('string');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/get_project/{{projectId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"get_project",
+								"{{projectId}}"
+							]
+						},
+						"description": "Get details of a specific project by ID"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Project",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Project is updated successfully\", function () {",
+									"    pm.expect(response.id).to.eql(parseInt(pm.collectionVariables.get(\"projectId\")));",
+									"    pm.expect(response.name).to.eql(pm.variables.get(\"updatedProjectName\"));",
+									"    pm.expect(response.announcement).to.eql(pm.variables.get(\"updatedProjectAnnouncement\"));",
+									"    pm.expect(response.show_announcement).to.eql(pm.variables.get(\"updatedShowAnnouncement\"));",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Generate random project update data",
+									"const updatedProjectName = \"Updated Project-\" + Math.floor(Math.random() * 10000);",
+									"const updatedProjectAnnouncement = \"This is an updated test project announcement on \" + new Date().toISOString();",
+									"const updatedShowAnnouncement = true;",
+									"",
+									"// Set variables for testing",
+									"pm.variables.set(\"updatedProjectName\", updatedProjectName);",
+									"pm.variables.set(\"updatedProjectAnnouncement\", updatedProjectAnnouncement);",
+									"pm.variables.set(\"updatedShowAnnouncement\", updatedShowAnnouncement);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"{{updatedProjectName}}\",\n    \"announcement\": \"{{updatedProjectAnnouncement}}\",\n    \"show_announcement\": {{updatedShowAnnouncement}}\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/update_project/{{projectId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"update_project",
+								"{{projectId}}"
+							]
+						},
+						"description": "Update an existing project"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Projects",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response contains projects\", function () {",
+									"    pm.expect(response).to.be.an(\"array\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/get_projects",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"get_projects"
+							]
+						},
+						"description": "Get a list of all projects"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Project is deleted successfully\", function () {",
+									"    // TestRail returns an empty response on successful deletion",
+									"    pm.expect(pm.response.text()).to.be.empty;",
+									"});",
+									"",
+									"// Verify project is deleted by checking it no longer exists",
+									"const getProjectRequestId = pm.sendRequest({",
+									"    url: pm.collectionVariables.get(\"baseUrl\") + \"/get_project/\" + pm.collectionVariables.get(\"projectId\"),",
+									"    method: \"GET\",",
+									"    header: {",
+									"        'Authorization': pm.request.headers.get(\"Authorization\"),",
+									"        'Content-Type': 'application/json'",
+									"    }",
+									"}, function (err, res) {",
+									"    pm.test(\"Project no longer exists\", function() {",
+									"        pm.expect(res.code).to.be.oneOf([400, 404]);",
+									"    });",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/delete_project/{{projectId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"delete_project",
+								"{{projectId}}"
+							]
+						},
+						"description": "Delete a project"
+					},
+					"response": []
+				}
+			],
+			"description": "Tests for TestRail Project Management API"
+		},
+		{
+			"name": "Test Case Management",
+			"item": [
+				{
+					"name": "Create New Test Case",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Test case is created successfully\", function () {",
+									"    pm.expect(response.id).to.be.a('number');",
+									"    pm.expect(response.title).to.eql(pm.variables.get(\"testCaseTitle\"));",
+									"    pm.expect(response.section_id).to.eql(parseInt(pm.collectionVariables.get(\"sectionId\")));",
+									"});",
+									"",
+									"// Save case ID for subsequent tests",
+									"if (response && response.id) {",
+									"    pm.collectionVariables.set(\"caseId\", response.id);",
+									"    console.log(\"Test case created with ID: \" + response.id);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Generate random test case data",
+									"const testCaseTitle = \"Test Case-\" + Math.floor(Math.random() * 10000);",
+									"const testCaseTypeId = 1; // Automated test case",
+									"const testCasePriorityId = 2; // Medium priority",
+									"",
+									"// Set variables for testing",
+									"pm.variables.set(\"testCaseTitle\", testCaseTitle);",
+									"pm.variables.set(\"testCaseTypeId\", testCaseTypeId);",
+									"pm.variables.set(\"testCasePriorityId\", testCasePriorityId);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"{{testCaseTitle}}\",\n    \"type_id\": {{testCaseTypeId}},\n    \"priority_id\": {{testCasePriorityId}},\n    \"template_id\": 1,\n    \"custom_steps_separated\": [\n        {\n            \"content\": \"Step 1\",\n            \"expected\": \"Expected Result 1\"\n        },\n        {\n            \"content\": \"Step 2\",\n            \"expected\": \"Expected Result 2\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/add_case/{{sectionId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"add_case",
+								"{{sectionId}}"
+							]
+						},
+						"description": "Create a new test case in a specific section"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Test Case Details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Test case details are returned correctly\", function () {",
+									"    pm.expect(response.id).to.eql(parseInt(pm.collectionVariables.get(\"caseId\")));",
+									"    pm.expect(response.title).to.be.a('string');",
+									"    pm.expect(response.section_id).to.eql(parseInt(pm.collectionVariables.get(\"sectionId\")));",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/get_case/{{caseId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"get_case",
+								"{{caseId}}"
+							]
+						},
+						"description": "Get details of a specific test case by ID"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Test Case",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Test case is updated successfully\", function () {",
+									"    pm.expect(response.id).to.eql(parseInt(pm.collectionVariables.get(\"caseId\")));",
+									"    pm.expect(response.title).to.eql(pm.variables.get(\"updatedTestCaseTitle\"));",
+									"    pm.expect(response.priority_id).to.eql(pm.variables.get(\"updatedTestCasePriorityId\"));",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// Generate random test case update data",
+									"const updatedTestCaseTitle = \"Updated Test Case-\" + Math.floor(Math.random() * 10000);",
+									"const updatedTestCasePriorityId = 3; // High priority",
+									"const updatedTestCaseEstimate = \"9m\";",
+									"",
+									"// Set variables for testing",
+									"pm.variables.set(\"updatedTestCaseTitle\", updatedTestCaseTitle);",
+									"pm.variables.set(\"updatedTestCasePriorityId\", updatedTestCasePriorityId);",
+									"pm.variables.set(\"updatedTestCaseEstimate\", updatedTestCaseEstimate);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"{{updatedTestCaseTitle}}\",\n    \"priority_id\": {{updatedTestCasePriorityId}},\n    \"estimate\": \"{{updatedTestCaseEstimate}}\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/update_case/{{caseId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"update_case",
+								"{{caseId}}"
+							]
+						},
+						"description": "Update an existing test case"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Test Cases",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const response = pm.response.json();",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response contains test cases\", function () {",
+									"    pm.expect(response).to.be.an(\"array\");",
+									"    ",
+									"    // Check if our created test case is in the list",
+									"    const caseId = parseInt(pm.collectionVariables.get(\"caseId\"));",
+									"    const foundCase = response.find(c => c.id === caseId);",
+									"    ",
+									"    if (foundCase) {",
+									"        pm.expect(foundCase.title).to.eql(pm.variables.get(\"updatedTestCaseTitle\"));",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"// For this request, we need to have created a project first",
+									"// The project ID should be set from the Create New Project test",
+									"// Set a project ID here if not already set",
+									"if (!pm.collectionVariables.get(\"projectId\")) {",
+									"    pm.collectionVariables.set(\"projectId\", 1); // Default project ID",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/get_cases/{{projectId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"get_cases",
+								"{{projectId}}"
+							]
+						},
+						"description": "Get all test cases for a project"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Test Case",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Test case is deleted successfully\", function () {",
+									"    // TestRail returns an empty response on successful deletion",
+									"    pm.expect(pm.response.text()).to.be.empty;",
+									"});",
+									"",
+									"// Verify test case is deleted by checking it no longer exists",
+									"const getTestCaseRequest = pm.sendRequest({",
+									"    url: pm.collectionVariables.get(\"baseUrl\") + \"/get_case/\" + pm.collectionVariables.get(\"caseId\"),",
+									"    method: \"GET\",",
+									"    header: {",
+									"        'Authorization': pm.request.headers.get(\"Authorization\"),",
+									"        'Content-Type': 'application/json'",
+									"    }",
+									"}, function (err, res) {",
+									"    pm.test(\"Test case no longer exists\", function() {",
+									"        pm.expect(res.code).to.be.oneOf([400, 404]);",
+									"    });",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/delete_case/{{caseId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"delete_case",
+								"{{caseId}}"
+							]
+						},
+						"description": "Delete a test case"
+					},
+					"response": []
+				}
+			],
+			"description": "Tests for TestRail Test Case Management API"
+		}
+	]
+}
