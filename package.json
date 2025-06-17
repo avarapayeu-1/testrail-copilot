@@ -1,14 +1,15 @@
 {
   "name": "testrail-copilot",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
+  "main": "index.js",  "scripts": {
     "test": "playwright test",
     "test:ui": "playwright test --ui",
     "test:chrome": "playwright test --project=chromium",
     "test:debug": "playwright test --debug",
     "test:api": "playwright test tests/api",
     "test:e2e": "playwright test tests/ui tests/integration",
+    "test:perf:project": "node tests/performance/helpers/run-with-env.js tests/performance/project-api.test.ts",
+    "test:perf:testcases": "node tests/performance/helpers/run-with-env.js tests/performance/test-cases-api.test.ts",
     "report": "playwright show-report",
     "format": "prettier --write \"src/**/*.{ts,js}\" \"tests/**/*.{ts,js}\"",
     "codegen": "playwright codegen"
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@faker-js/faker": "^9.8.0",
     "@playwright/test": "^1.52.0",
+    "@types/k6": "^1.0.2",
     "@types/node": "^22.15.29",
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2"
